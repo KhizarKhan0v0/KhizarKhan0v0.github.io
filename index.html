@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khizar Hayat - Portfolio. Software Engineer specializing in Full-Stack Web Development, AI/LLM integrations, and RESTful APIs. Explore my projects and contact me.">
+    <meta name="keywords" content="Khizar Hayat, Software Engineer, Full Stack Developer, MERN Stack, React, Node.js, AI, LLM, Portfolio">
+    <meta name="author" content="Khizar Hayat">
+    <title>Khizar Hayat | Software Engineer & Full-Stack Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Interactive Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="logo-link">
+                <span class="logo-accent">&lt;</span>Khizar<span class="logo-accent"> /&gt;</span>
+            </a>
+            <nav class="nav-links" id="nav-menu">
+                <a href="#hero" class="nav-link active" id="nav-item-hero">Home</a>
+                <a href="#about" class="nav-link" id="nav-item-about">About</a>
+                <a href="#skills" class="nav-link" id="nav-item-skills">Skills</a>
+                <a href="#experience" class="nav-link" id="nav-item-experience">Experience</a>
+                <a href="#projects" class="nav-link" id="nav-item-projects">Projects</a>
+                <a href="#contact" class="nav-link nav-cta" id="nav-item-contact">Contact Me</a>
+            </nav>
+            <button class="nav-hamburger" id="nav-toggle" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="section-container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge animate-fade-in" id="hero-badge">
+                        <span class="badge-dot"></span> Open to Opportunities
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="text-glow">Khizar Hayat</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        I am a <span id="typing-text" class="text-accent"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description animate-slide-up">
+                        Computer Science student & Full-Stack Developer specializing in building robust web applications, designing RESTful APIs, and integrating AI/LLM solutions.
+                    </p>
+                    <div class="hero-actions animate-slide-up">
+                        <a href="#projects" class="btn btn-primary" id="hero-btn-work">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact">Get In Touch</a>
+                    </div>
+                    <div class="hero-socials animate-slide-up">
+                        <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub" id="hero-social-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khizar-hayat-0v0" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn" id="hero-social-linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:khizarhayyat194@gmail.com" class="social-icon" aria-label="Email" id="hero-social-email">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="tel:+923275540725" class="social-icon" aria-label="Phone" id="hero-social-phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual animate-zoom-in">
+                    <div class="visual-wrapper">
+                        <!-- Glowing Tech Sphere -->
+                        <div class="glowing-orb"></div>
+                        <div class="tech-ring ring-1"></div>
+                        <div class="tech-ring ring-2"></div>
+                        <div class="tech-ring ring-3"></div>
+                        <div class="developer-avatar">
+                            <img src="profile pic.jpeg" alt="Khizar Hayat Profile" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator" id="scroll-arrow">
+                <a href="#about" aria-label="Scroll Down">
+                    <span class="mouse">
+                        <span class="wheel"></span>
+                    </span>
+                    <span class="arrow-down"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section id="about" class="about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Introduction</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-info">
+                        <p class="about-text">
+                            I am a Computer Science undergraduate at COMSATS University Islamabad, passionate about full-stack web development, API integration, and machine learning. With a solid foundation in software engineering principles, algorithms, and data structures, I build applications that solve real-world problems.
+                        </p>
+                        <p class="about-text">
+                            My journey in tech involves teaching web development, collaborating on team projects, and building systems using modern technology stacks. I love designing clean RESTful architectures, working on frontend interfaces that deliver excellent user experiences, and exploring AI/LLM applications to make systems smarter.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-card" id="stat-cgpa">
+                                <div class="stat-num text-gradient">3.64</div>
+                                <div class="stat-label">B.S. CS CGPA</div>
+                            </div>
+                            <div class="stat-card" id="stat-percentile">
+                                 <div class="stat-num text-gradient">92.2%</div>
+                                 <div class="stat-label">NSCT (HEC) Percentile</div>
+                             </div>
+                            <div class="stat-card" id="stat-experience">
+                                <div class="stat-num text-gradient">1+ Yr</div>
+                                <div class="stat-label">Trainer & Dev Exp</div>
+                            </div>
+                            <div class="stat-card" id="stat-projects">
+                                <div class="stat-num text-gradient">4+</div>
+                                <div class="stat-label">Key Projects</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cards">
+                        <div class="interactive-card info-box" id="info-edu">
+                            <div class="info-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3>Education</h3>
+                            <p>COMSATS University Islamabad</p>
+                            <span class="info-meta">B.S. Computer Science • Expected Sep 2026</span>
+                        </div>
+                        <div class="interactive-card info-box" id="info-role">
+                            <div class="info-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Focus areas</h3>
+                            <p>Full-Stack, ML Pipelines & REST APIs</p>
+                            <span class="info-meta">MERN stack, Python, Flask, JWT, SQL/NoSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-category="all" id="skill-tab-all">All Skills</button>
+                    <button class="tab-btn" data-category="languages" id="skill-tab-lang">Languages</button>
+                    <button class="tab-btn" data-category="web-api" id="skill-tab-web">Web & APIs</button>
+                    <button class="tab-btn" data-category="databases" id="skill-tab-db">Databases</button>
+                    <button class="tab-btn" data-category="tools" id="skill-tab-tools">Tools & Soft Skills</button>
+                </div>
+                <div class="skills-grid" id="skills-container">
+                    <!-- Languages -->
+                    <div class="skill-card" data-category="languages" id="skill-js">
+                        <div class="skill-icon"><i class="fab fa-js-square text-js"></i></div>
+                        <h4 class="skill-name">JavaScript</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="90%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages" id="skill-py">
+                        <div class="skill-icon"><i class="fab fa-python text-python"></i></div>
+                        <h4 class="skill-name">Python</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages" id="skill-cpp">
+                        <div class="skill-icon"><span class="tech-icon-txt">C++</span></div>
+                        <h4 class="skill-name">C++</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="languages" id="skill-sql">
+                        <div class="skill-icon"><i class="fas fa-database text-sql"></i></div>
+                        <h4 class="skill-name">SQL</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+
+                    <!-- Web & APIs -->
+                    <div class="skill-card" data-category="web-api" id="skill-react">
+                        <div class="skill-icon"><i class="fab fa-react text-react"></i></div>
+                        <h4 class="skill-name">React.js</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="90%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-api" id="skill-node">
+                        <div class="skill-icon"><i class="fab fa-node-js text-node"></i></div>
+                        <h4 class="skill-name">Node.js</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-api" id="skill-express">
+                        <div class="skill-icon"><span class="tech-icon-txt">Ex</span></div>
+                        <h4 class="skill-name">Express.js</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="88%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-api" id="skill-api">
+                        <div class="skill-icon"><i class="fas fa-network-wired text-api"></i></div>
+                        <h4 class="skill-name">RESTful APIs & JWT</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="90%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-api" id="skill-llm">
+                        <div class="skill-icon"><i class="fas fa-brain text-llm"></i></div>
+                        <h4 class="skill-name">LLM & API Integrations</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="80%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="web-api" id="skill-htmlcss">
+                        <div class="skill-icon"><i class="fab fa-html5 text-html"></i></div>
+                        <h4 class="skill-name">HTML5 & CSS3</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="95%"></div></div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skill-card" data-category="databases" id="skill-mongo">
+                        <div class="skill-icon"><i class="fas fa-leaf text-mongo"></i></div>
+                        <h4 class="skill-name">MongoDB & Mongoose</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="88%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="databases" id="skill-design">
+                        <div class="skill-icon"><i class="fas fa-project-diagram text-design"></i></div>
+                        <h4 class="skill-name">Schema & Relational Design</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+
+                    <!-- Tools & Practices -->
+                    <div class="skill-card" data-category="tools" id="skill-git">
+                        <div class="skill-icon"><i class="fab fa-git-alt text-git"></i></div>
+                        <h4 class="skill-name">Git & GitHub</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools" id="skill-postman">
+                        <div class="skill-icon"><span class="tech-icon-txt">PM</span></div>
+                        <h4 class="skill-name">Postman & Testing</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+                    <div class="skill-card" data-category="tools" id="skill-agile">
+                        <div class="skill-icon"><i class="fas fa-users text-agile"></i></div>
+                        <h4 class="skill-name">Agile & Teamwork</h4>
+                        <div class="skill-bar"><div class="skill-progress" data-level="85%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience" class="timeline-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Chronology</span>
+                    <h2 class="section-title">Experience & Education</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Experience 1 -->
+                    <div class="timeline-item left-item" id="timeline-exp-1">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card-glow">
+                            <span class="timeline-date">Oct 2025 - Jan 2026</span>
+                            <h3 class="timeline-title">MERN Stack Trainer</h3>
+                            <h4 class="timeline-org">Narmer Solutions, Vehari</h4>
+                            <p class="timeline-description">
+                                Mentored and guided 10+ students in full-stack web development. Designed and conducted curriculum covering REST API design, React, Node.js, Express, MongoDB, and Git workflows through interactive project-based learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Project FYP Timeline -->
+                    <div class="timeline-item right-item" id="timeline-fyp">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card-glow">
+                            <span class="timeline-date">May 2025 - Present</span>
+                            <h3 class="timeline-title">MyCampusRide (Final Year Project)</h3>
+                            <h4 class="timeline-org">COMSATS University Islamabad</h4>
+                            <p class="timeline-description">
+                                Leading development of a transportation-management system. Features real-time bus tracking via Socket.IO, custom interactive maps using React Leaflet, role-based interfaces (Admin, Student, Driver), virtual transit passes, and a RESTful backend API.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="timeline-item left-item" id="timeline-edu">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card-glow">
+                            <span class="timeline-date">Sep 2022 - Expected Sep 2026</span>
+                            <h3 class="timeline-title">B.S. Computer Science</h3>
+                            <h4 class="timeline-org">COMSATS University Islamabad</h4>
+                            <p class="timeline-description">
+                                Pursuing deep theoretical and practical knowledge in Computer Science. CGPA: 3.64/4.00. Key areas: Software Engineering, Database Systems, Computer Networks, Machine Learning, Operating Systems, NLP, and Algorithms.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certifications & Assessments -->
+                    <div class="timeline-item right-item" id="timeline-certs">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content card-glow">
+                            <span class="timeline-date">2024 - 2025</span>
+                            <h3 class="timeline-title">Certifications & Assessments</h3>
+                            <h4 class="timeline-org">HP LIFE & Higher Education Commission (HEC)</h4>
+                            <p class="timeline-description">
+                                • Achieved a 92.2 percentile score in the National Skill Competency Test (NSCT) conducted by the Higher Education Commission (HEC).<br>
+                                • Certified in Data Science & Analytics (HP LIFE) and AI for Beginners.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">My Work</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="proj-filter-all">All Projects</button>
+                    <button class="filter-btn" data-filter="mern" id="proj-filter-mern">MERN / Full-Stack</button>
+                    <button class="filter-btn" data-filter="ml" id="proj-filter-ml">AI & Machine Learning</button>
+                    <button class="filter-btn" data-filter="backend" id="proj-filter-backend">Backend / API</button>
+                </div>
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="mern" id="proj-mycampusride">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay"></div>
+                            <!-- Mock UI representing Map tracking and Transit cards -->
+                            <div class="project-mockup mern-mockup">
+                                <div class="mock-map">
+                                    <div class="mock-pin pin-1"></div>
+                                    <div class="mock-pin pin-2"></div>
+                                    <div class="mock-route"></div>
+                                    <div class="mock-panel">
+                                        <h5>Bus #04 Tracking</h5>
+                                        <p><span class="pulsing-dot"></span> Active (5 mins away)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-tag">Full-Stack / Socket.IO</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">MyCampusRide</h3>
+                            <p class="project-desc">
+                                A comprehensive university transit platform. Integrates live bus tracking with WebSockets (Socket.IO), Leaflet maps, multi-portal roles, and automated digital transit cards.
+                            </p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>Socket.IO</span>
+                                <span>Leaflet</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://my-campus-ride.vercel.app" target="_blank" rel="noopener noreferrer" class="proj-btn btn-live" id="btn-demo-campus"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="proj-btn btn-code" id="btn-code-campus"><i class="fab fa-github"></i> GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="ml" id="proj-sentiment">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay"></div>
+                            <!-- Mock UI representing Sentiment Chart / NLP pipeline -->
+                            <div class="project-mockup ml-mockup">
+                                <div class="mock-nlp">
+                                    <div class="nlp-bar positive" style="height: 77.5%;"></div>
+                                    <div class="nlp-bar negative" style="height: 22.5%;"></div>
+                                    <div class="nlp-label">Accuracy: 77.5%</div>
+                                    <div class="nlp-input">"Great app! Saved lots of time."</div>
+                                    <div class="nlp-badge badge-pos">Positive</div>
+                                </div>
+                            </div>
+                            <span class="project-tag">NLP & Machine Learning</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Sentiment Analysis Pipeline</h3>
+                            <p class="project-desc">
+                                Natural language processing pipeline classifying text reviews. Features text preprocessing (NLTK), model training (Logistic Regression, Random Forest, Naïve Bayes), and Streamlit deployment.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>NLTK</span>
+                                <span>Pandas</span>
+                                <span>NumPy</span>
+                                <span>Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="proj-btn btn-code" id="btn-code-sentiment"><i class="fab fa-github"></i> View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="backend" id="proj-restaurant">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay"></div>
+                            <!-- Mock UI representing API routes / JSON response -->
+                            <div class="project-mockup backend-mockup">
+                                <div class="mock-api-code">
+                                    <div class="code-line"><span class="c-key">GET</span> /api/v1/menu</div>
+                                    <div class="code-line indent-1"><span class="c-prop">status</span>: 200,</div>
+                                    <div class="code-line indent-1"><span class="c-prop">items</span>: [...]</div>
+                                    <div class="code-line"><span class="c-key">POST</span> /api/v1/auth/login</div>
+                                    <div class="code-line indent-1"><span class="c-prop">token</span>: <span class="c-val">"eyJhb..."</span></div>
+                                </div>
+                            </div>
+                            <span class="project-tag">Backend / REST API</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Restaurant Management API</h3>
+                            <p class="project-desc">
+                                Robust backend RESTful API built following the Model-View-Controller (MVC) pattern. Implements secure JWT authentication, relational model schemas, and server-side rendering with EJS.
+                            </p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>Mongoose</span>
+                                <span>JWT</span>
+                                <span>EJS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="proj-btn btn-code" id="btn-code-rest"><i class="fab fa-github"></i> View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="mern" id="proj-eventreg">
+                        <div class="project-img-wrapper">
+                            <div class="project-overlay"></div>
+                            <!-- Mock UI representing user-event dashboard -->
+                            <div class="project-mockup event-mockup">
+                                <div class="mock-dashboard">
+                                    <div class="dash-header">
+                                        <div class="circle-btn"></div>
+                                        <div class="bar-title">Events Panel</div>
+                                    </div>
+                                    <div class="dash-grid">
+                                        <div class="dash-item active-event">Tech Conf 2026</div>
+                                        <div class="dash-item">ML Workshop</div>
+                                        <div class="dash-item register-btn">+ Register</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="project-tag">Full-Stack (MERN)</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Event Registration System</h3>
+                            <p class="project-desc">
+                                A secure application that supports user account creation, browsing active events, registration, and user-event relational mapping. Features protected API routes and state management.
+                            </p>
+                            <div class="project-tech">
+                                <span>React.js</span>
+                                <span>Node.js</span>
+                                <span>Express.js</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                                <span>Axios</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="proj-btn btn-code" id="btn-code-event"><i class="fab fa-github"></i> View Repository</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <!-- Contact Information Details -->
+                    <div class="contact-info-panel">
+                        <h3 class="contact-info-title">Let's Connect</h3>
+                        <p class="contact-info-desc">
+                            Feel free to reach out to me! I'm always open to discussing new projects, internships, collaborations, or opportunities in software engineering, full-stack web, or machine learning.
+                        </p>
+
+                        <div class="contact-cards-list">
+                            <!-- Email Card (Interactive Copy) -->
+                            <div class="contact-item-card" data-clipboard="khizarhayyat194@gmail.com" id="contact-card-email">
+                                <div class="contact-item-icon">
+                                    <i class="far fa-envelope text-accent"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">Email Me</span>
+                                    <span class="contact-val">khizarhayyat194@gmail.com</span>
+                                </div>
+                                <button class="copy-btn" aria-label="Copy Email" id="btn-copy-email">
+                                    <i class="far fa-clone"></i>
+                                </button>
+                            </div>
+
+                            <!-- Phone Card (Interactive Copy) -->
+                            <div class="contact-item-card" data-clipboard="+923275540725" id="contact-card-phone">
+                                <div class="contact-item-icon">
+                                    <i class="fas fa-phone text-accent"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">Call / WhatsApp</span>
+                                    <span class="contact-val">+92 327 5540725</span>
+                                </div>
+                                <button class="copy-btn" aria-label="Copy Phone Number" id="btn-copy-phone">
+                                    <i class="far fa-clone"></i>
+                                </button>
+                            </div>
+
+                            <!-- LinkedIn Link Card -->
+                            <a href="https://www.linkedin.com/in/khizar-hayat-0v0" target="_blank" rel="noopener noreferrer" class="contact-item-card link-card" id="contact-card-linkedin">
+                                <div class="contact-item-icon">
+                                    <i class="fab fa-linkedin-in text-accent"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">LinkedIn</span>
+                                    <span class="contact-val">khizar-hayat-0v0</span>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </a>
+
+                            <!-- GitHub Link Card -->
+                            <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="contact-item-card link-card" id="contact-card-github">
+                                <div class="contact-item-icon">
+                                    <i class="fab fa-github text-accent"></i>
+                                </div>
+                                <div class="contact-item-details">
+                                    <span class="contact-label">GitHub</span>
+                                    <span class="contact-val">khizarkhan0v0</span>
+                                </div>
+                                <div class="arrow-icon">
+                                    <i class="fas fa-arrow-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-panel card-glow">
+                        <form id="contact-form" novalidate>
+                            <div class="form-row-2">
+                                <div class="form-group">
+                                    <label for="form-name">Your Name</label>
+                                    <div class="input-wrapper">
+                                        <i class="far fa-user input-icon"></i>
+                                        <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                    </div>
+                                    <span class="error-msg" id="name-error">Please enter your name</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Your Email</label>
+                                    <div class="input-wrapper">
+                                        <i class="far fa-envelope input-icon"></i>
+                                        <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                    </div>
+                                    <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <div class="input-wrapper">
+                                    <i class="far fa-bookmark input-icon"></i>
+                                    <input type="text" id="form-subject" name="subject" placeholder="Collaboration / Job Opportunity" required>
+                                </div>
+                                <span class="error-msg" id="subject-error">Please enter a subject</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Your Message</label>
+                                <div class="input-wrapper">
+                                    <textarea id="form-message" name="message" rows="5" placeholder="Hi Khizar, I would love to talk about..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="message-error">Please enter your message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="spinner hide"></span>
+                            </button>
+                        </form>
+
+                        <!-- Success Overlay (Hidden initially) -->
+                        <div class="form-success-overlay hide" id="form-success-overlay">
+                            <div class="success-content animate-bounce-in">
+                                <div class="success-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <h3>Thank You!</h3>
+                                <p>Your message has been sent successfully. I will get back to you as soon as possible.</p>
+                                <button class="btn btn-secondary" id="btn-success-reset">Send Another Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-accent">&lt;</span>Khizar<span class="logo-accent"> /&gt;</span>
+                </a>
+                <p class="footer-tagline">Building modern full-stack web applications and AI integrated architectures.</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#hero">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/khizar-hayat-0v0" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:khizarhayyat194@gmail.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Khizar Hayat. All rights reserved. Crafted with care & passion.</p>
+            <button class="back-to-top" id="back-to-top" aria-label="Back to Top">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Floating Vertical Social Sidebar -->
+    <div class="floating-contact-bar">
+        <a href="https://github.com/khizarkhan0v0" target="_blank" rel="noopener noreferrer" class="floating-icon" aria-label="GitHub" id="floating-github">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/khizar-hayat-0v0" target="_blank" rel="noopener noreferrer" class="floating-icon" aria-label="LinkedIn" id="floating-linkedin">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:khizarhayyat194@gmail.com" class="floating-icon" aria-label="Email" id="floating-email">
+            <i class="far fa-envelope"></i>
+        </a>
+        <a href="tel:+923275540725" class="floating-icon" aria-label="Phone" id="floating-phone">
+            <i class="fas fa-phone"></i>
+        </a>
+        <div class="floating-line"></div>
+    </div>
+
+    <!-- EmailJS CDN -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
